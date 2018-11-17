@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     end
     
     def show
-      @user = find(params[:id]) 
+      @user = User.find_by(id: params[:id]) 
       render :new
     end
     
@@ -20,7 +20,7 @@ class UsersController < ApplicationController
       
       if @user.save
         login(@user)
-        redirect_to user_url
+        redirect_to user_url(@user.id)
       else
         flash.now[:errors] = @user.errors.full_messages
         render :new
@@ -42,6 +42,6 @@ class UsersController < ApplicationController
     private
     
     def user_params
-      params.require(:user).permit.(:username, :password)
+      params.require(:user).permit(:username, :password)
     end
   end

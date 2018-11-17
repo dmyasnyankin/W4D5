@@ -214,3 +214,96 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2018-11-16 16:35:10 -0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 43.0ms | ActiveRecord: 9.1ms)
+
+
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+password { "password" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (2 levels) in <main> at /Users/appacademy/Desktop/W4D5/goal_app/spec/factories/users.rb:16)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+username { "yo_mama" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <main> at /Users/appacademy/Desktop/W4D5/goal_app/spec/factories/users.rb:19)
+DEPRECATION WARNING: Static attributes will be removed in FactoryBot 5.0. Please use dynamic
+attributes instead by wrapping the attribute value in a block:
+
+password { "mama_yo" }
+
+To automatically update from static attributes to dynamic ones,
+install rubocop-rspec and run:
+
+rubocop \
+  --require rubocop-rspec \
+  --only FactoryBot/AttributeDefinedStatically \
+  --auto-correct
+
+ (called from block (3 levels) in <main> at /Users/appacademy/Desktop/W4D5/goal_app/spec/factories/users.rb:20)
+Started POST "/users" for 127.0.0.1 at 2018-11-16 16:57:20 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"ali", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/e39cb6db74bf2a16/variables" for 127.0.0.1 at 2018-11-16 16:57:21 -0800
+Started POST "/users" for 127.0.0.1 at 2018-11-16 17:01:19 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"ali", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/b6ba5d6144c8e7ac/variables" for 127.0.0.1 at 2018-11-16 17:01:19 -0800
+Started POST "/users" for 127.0.0.1 at 2018-11-16 17:01:31 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"ali", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/749f426a3d88a993/variables" for 127.0.0.1 at 2018-11-16 17:01:31 -0800
+Started POST "/users" for 127.0.0.1 at 2018-11-16 17:01:43 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"ali", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/49be8ed91198586b/variables" for 127.0.0.1 at 2018-11-16 17:01:43 -0800

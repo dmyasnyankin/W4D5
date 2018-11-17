@@ -14,10 +14,6 @@ FactoryBot.define do
   factory :user do
     username {Faker::TheFreshPrinceOfBelAir.character}
     password 'password'
-    
-    factory :yo_mama do
-      username 'yo_mama'
-      password 'mama_yo'
-    end
+
   end
 end
