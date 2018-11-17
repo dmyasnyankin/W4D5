@@ -22,7 +22,7 @@ RSpec.describe User, type: :model do
     describe 'session_token' do
       it 'assigns a session_token to the user' do
         expect(FactoryBot.build(:user).session_token).not_to be_nil
-      ends
+      end
     end
     
     describe 'password encryption' do
